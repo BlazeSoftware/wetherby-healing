@@ -1,0 +1,61 @@
+backend:
+  name: git-gateway
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: "events"
+    label: "Events"
+    folder: "content/events"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text", required: false}
+      - {label: "Featured Image", name: "featuredImage", widget: image}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "testimonials"
+    label: "Testimonials"
+    folder: "content/testimonials"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text", required: false}
+  
+  - name: "pages"
+    label: "Pages"
+    files:
+    - file: "content/site/home.md"
+      label: "Home Page"
+      name: "home"
+      fields:
+        - {label: Title, name: title, widget: string}
+        - {label: Description, name: description, widget: string, required: false}
+        - {label: "Body", name: "body", widget: "markdown", required: false}
+
+    - file: "content/site/work.md"
+      label: "Events Page"
+      name: "events"
+      fields:
+        - {label: Title, name: title, widget: string}
+        - {label: Description, name: description, widget: string, required: false}
+        - {label: "Body", name: "body", widget: "markdown", required: false}
+
+    - file: "content/site/about.md"
+      label: "About Page"
+      name: "about"
+      fields:
+        - {label: Title, name: title, widget: string}
+        - {label: Description, name: description, widget: string, required: false}
+        - {label: "Body", name: "body", widget: "markdown", required: false}
+
+    - file: "content/site/contact.md"
+      label: "Contact Page"
+      name: "contact"
+      fields:
+        - {label: Title, name: title, widget: string}
+        - {label: Description, name: description, widget: string, required: false}
+        - {label: "Body", name: "body", widget: "markdown", required: false}

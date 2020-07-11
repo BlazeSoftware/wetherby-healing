@@ -1,0 +1,65 @@
+@import 'node_modules/@blaze/css/src/scss/mixins/_tools.mediaqueries';
+
+.c-event-link {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-auto-flow: dense;
+  height: 350px;
+  margin-top: 2em;
+  text-decoration: none;
+  color: white;
+  background-color: var(--color-default);
+  box-shadow: 0 20px 20px -30px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+
+  @include screen-and-up(medium) {
+    grid-template-columns: 33% 1fr;
+  }
+
+  &:hover {
+    box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.5);
+  }
+
+  &:not(:first-child) {
+    margin-top: 5em;
+  }
+
+  &:nth-child(even) {
+    @include screen-and-up(medium) {
+      grid-template-columns: 1fr 33%;
+
+      .c-event-link__image {
+        grid-column: 1;
+      }
+      .c-event-link__title {
+        grid-column: 2;
+      }
+    }
+  }
+
+  .c-event-link__title {
+    display: grid;
+    background-color: var(--color-brand);
+    height: 5em;
+
+    @include screen-and-up(medium) {
+      height: auto;
+    }
+
+    .c-heading {
+      align-self: end;
+      padding: 0.25em 0.5em;
+    }
+  }
+
+  .c-event-link__description {
+    display: grid;
+    align-self: end;
+    grid-column: 1 / -1;
+    padding: 1em;
+
+    @include screen-and-up(medium) {
+      align-self: start;
+    }
+  }
+}

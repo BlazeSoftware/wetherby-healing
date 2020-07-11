@@ -1,0 +1,50 @@
+@import 'node_modules/@blaze/css/src/scss/blaze';
+@import 'node_modules/@blaze/css/src/scss/_variables';
+@import 'node_modules/@blaze/css/src/scss/mixins/_tools.mediaqueries';
+@import 'node_modules/@blaze/css/src/scss/mixins/_utilities.visibility';
+
+@import './slick.scss';
+@import './slick-theme.scss';
+
+:root {
+  --text-font-family-copy: 'Lora', sans-serif;
+  --text-font-family-sans-serif: 'Karla', sans-serif;
+  --text-font-family-serif: 'Playfair Display', serif;
+  --text-font-family: var(--text-font-family-serif);
+  --color-text: #444;
+  --color-brand: #ffdfdf;
+  --color-link: var(--color-text);
+}
+
+::selection {
+  color: black;
+  background: var(--color-brand);
+}
+
+html,
+body,
+body > div,
+body > div > div {
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--color-background);
+  letter-spacing: 0.05em;
+  -webkit-font-smoothing: auto;
+}
+
+.u-copy {
+  font-family: var(--text-font-family-copy);
+  letter-spacing: 0;
+}
+
+.c-heading {
+  font-weight: var(--text-font-weight);
+}
+
+.o-page-nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}

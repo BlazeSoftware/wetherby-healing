@@ -1,0 +1,22 @@
+@import 'node_modules/@blaze/css/src/scss/mixins/_tools.mediaqueries';
+
+.c-bio {
+  max-width: 30em;
+  padding: 2em 1em;
+
+  @include screen-and-up(large) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 64em;
+    padding: 4em 2em;
+    grid-gap: 3em;
+  }
+
+  .c-heading.c-bio__title {
+    font-weight: var(--text-font-weight);
+
+    @include screen-and-up(large) {
+      font-size: var(--text-font-size-super);
+    }
+  }
+}

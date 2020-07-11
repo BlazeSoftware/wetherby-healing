@@ -1,0 +1,15 @@
+@import 'node_modules/@blaze/css/src/scss/mixins/_tools.mediaqueries';
+
+.c-about {
+  &__image {
+    margin: auto;
+  }
+
+  &__content {
+    padding: 1em 2em;
+
+    @include screen-and-up(large) {
+      padding: 3em 0;
+    }
+  }
+}
