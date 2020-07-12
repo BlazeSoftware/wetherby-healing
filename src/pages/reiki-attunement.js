@@ -3,10 +3,10 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import PageTemplate from '../components/page';
 
-const AboutPage = ({ location }) => {
+const AttunementPage = ({ location }) => {
   const data = useStaticQuery(graphql`
-    query AboutQuery {
-      allMarkdownRemark(filter: { fields: { slug: { regex: "^/site/about/" } } }) {
+    query AttunementQuery {
+      allMarkdownRemark(filter: { fields: { slug: { regex: "^/site/reiki-attunement/" } } }) {
         edges {
           node {
             frontmatter {
@@ -26,8 +26,8 @@ const AboutPage = ({ location }) => {
       }
     }
   `);
-
+  
   return <PageTemplate {...{ location, data }} />;
 };
 
-export default AboutPage;
+export default AttunementPage;

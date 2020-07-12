@@ -3,10 +3,10 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import PageTemplate from '../components/page';
 
-const AboutPage = ({ location }) => {
+const ReadingsPage = ({ location }) => {
   const data = useStaticQuery(graphql`
-    query AboutQuery {
-      allMarkdownRemark(filter: { fields: { slug: { regex: "^/site/about/" } } }) {
+    query ReadingsQuery {
+      allMarkdownRemark(filter: { fields: { slug: { regex: "^/site/psychic-spiritual-readings/" } } }) {
         edges {
           node {
             frontmatter {
@@ -30,4 +30,4 @@ const AboutPage = ({ location }) => {
   return <PageTemplate {...{ location, data }} />;
 };
 
-export default AboutPage;
+export default ReadingsPage;

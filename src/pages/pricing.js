@@ -3,10 +3,12 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import PageTemplate from '../components/page';
 
-const AboutPage = ({ location }) => {
+import './pricing.scss';
+
+const PricingPage = ({ location }) => {
   const data = useStaticQuery(graphql`
-    query AboutQuery {
-      allMarkdownRemark(filter: { fields: { slug: { regex: "^/site/about/" } } }) {
+    query PricingQuery {
+      allMarkdownRemark(filter: { fields: { slug: { regex: "^/site/pricing/" } } }) {
         edges {
           node {
             frontmatter {
@@ -26,8 +28,11 @@ const AboutPage = ({ location }) => {
       }
     }
   `);
-
-  return <PageTemplate {...{ location, data }} />;
+  return (
+    <div className="o-pricing">
+      <PageTemplate {...{ location, data }} />
+    </div>
+  );
 };
 
-export default AboutPage;
+export default PricingPage;

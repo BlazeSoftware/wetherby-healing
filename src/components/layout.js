@@ -22,8 +22,11 @@ const Layout = ({ location, children, title, description }) => {
 
   const renderNavLinks = () => (
     <>
-      <Link className="c-navbar__link" activeClassName="active" to={`/reiki`}>
-        Reiki
+      <Link className="c-navbar__link" activeClassName="active" to={`/reiki-healing`}>
+        Reiki Healing
+      </Link>
+      <Link className="c-navbar__link" activeClassName="active" to={`/reiki-attunement`}>
+        Attunement
       </Link>
       <Link className="c-navbar__link" activeClassName="active" to={`/psychic-spiritual-readings`}>
         Readings
@@ -33,9 +36,6 @@ const Layout = ({ location, children, title, description }) => {
       </Link>
       <Link className="c-navbar__link" activeClassName="active" to={`/events`}>
         Events
-      </Link>
-      <Link className="c-navbar__link" activeClassName="active" to={`/about`}>
-        About
       </Link>
       <Link className="c-navbar__link" activeClassName="active" to={`/contact`}>
         Contact
@@ -79,9 +79,11 @@ const Layout = ({ location, children, title, description }) => {
             <h1 className="c-heading c-heading--title u-centered">{title}</h1>
           </div>
         </div>
-        <div className="o-sub-header o-container o-container--large">
-          {description && <h3 className="c-heading c-heading--sub u-centered">{description}</h3>}
-        </div>
+        {location.pathname !== `/` && description && (
+          <div className="o-sub-header o-container o-container--large">
+            {description && <h3 className="c-heading c-heading--sub u-centered">{description}</h3>}
+          </div>
+        )}
       </header>
 
       <main>{children}</main>

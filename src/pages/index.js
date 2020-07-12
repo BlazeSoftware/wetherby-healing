@@ -22,15 +22,6 @@ const HomePage = ({ location }) => {
             frontmatter {
               title
               description
-              profileTitle
-              profile
-              profileImage {
-                childImageSharp {
-                  fluid(maxWidth: 512) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
             }
             html
           }
@@ -39,20 +30,20 @@ const HomePage = ({ location }) => {
     }
   `);
   const {
-    frontmatter: { title, description, profileTitle, profile, profileImage },
+    frontmatter: { title },
     html,
   } = data.allMarkdownRemark.edges[0].node;
 
   return (
-    <Layout location={location} title={title} description={description || data.site.siteMetadata.description}>
+    <Layout location={location} title={title} description={data.site.siteMetadata.description}>
       {html && (
         <section
-          className="c-home-content o-container o-container--medium u-justified u-copy"
+          className="o-container o-container--medium u-window-box-large u-justified u-copy"
           dangerouslySetInnerHTML={{ __html: html }}
         />
       )}
       <TestimonialsList />
-      <Bio {...{ profileTitle, profile, profileImage }} />
+      <Bio />
     </Layout>
   );
 };

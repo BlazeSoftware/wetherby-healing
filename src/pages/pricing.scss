@@ -1,0 +1,14 @@
+@import 'node_modules/@blaze/css/src/scss/mixins/_tools.mediaqueries';
+
+.o-pricing .o-page .o-container {
+  @include screen-and-up(large) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: column;
+    gap: 0 5em;
+    align-items: baseline;
+    justify-items: baseline;
+    padding-bottom: 3em !important;
+  }
+}

@@ -1,7 +1,5 @@
 @import 'node_modules/@blaze/css/src/scss/blaze';
 @import 'node_modules/@blaze/css/src/scss/_variables';
-@import 'node_modules/@blaze/css/src/scss/mixins/_tools.mediaqueries';
-@import 'node_modules/@blaze/css/src/scss/mixins/_utilities.visibility';
 
 @import './slick.scss';
 @import './slick-theme.scss';
@@ -42,6 +40,7 @@ body {
 
 .c-heading {
   font-weight: var(--text-font-weight);
+  text-transform: capitalize;
 }
 
 .o-page-nav {

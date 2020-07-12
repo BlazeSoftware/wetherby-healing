@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Wetherby Health`,
-    description: `Modern, fresh and innovative installation solutions and manufacturers.`,
+    description: `The spiritual route to healing and health delivered by clairvoyant and Reiki Master Deborah Watson.`,
     siteUrl: `https://wetherby-health.com/`,
   },
   plugins: [

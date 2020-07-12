@@ -1,6 +1,5 @@
 ---
 title: The spiritual route to healing and health delivered by clairvoyant and Reiki Master Deborah Watson.
-description: Vivamus ex ipsum, scelerisque non justo sit amet, aliquam pretium diam.
 profileTitle: Hi, I'm Deborah Watson.
 profile: I am a Reiki practitioner and psychic based in Wetherby. I became a qualified Reiki Master in 2013 after five years of study and, as well as healing others, I pass on the gift of knowledge through teaching, or 'attunements'. I also give psychic and spiritual readings using the tarot, crystals or personal objects that people bring to me.
 profileImage: /img/profile-pic.jpg
