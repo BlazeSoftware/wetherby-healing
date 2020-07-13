@@ -41,6 +41,10 @@
         display: block;
         color: var(--color-text);
       }
+
+      &.c-navbar__link--menu {
+        padding-left: 3em;
+      }
     }
 
     @include screen-and-up(large) {
@@ -181,6 +185,6 @@
         display: inline-block;
         margin-right: 3em;
       }
-    }  
+    }
   }
 }

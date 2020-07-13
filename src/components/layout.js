@@ -20,24 +20,24 @@ const Layout = ({ location, children, title, description }) => {
   `);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const renderNavLinks = () => (
+  const renderNavLinks = (classes) => (
     <>
-      <Link className="c-navbar__link" activeClassName="active" to={`/reiki-healing`}>
+      <Link className={classes} activeClassName="active" to={`/reiki-healing`}>
         Reiki Healing
       </Link>
-      <Link className="c-navbar__link" activeClassName="active" to={`/reiki-attunement`}>
+      <Link className={classes} activeClassName="active" to={`/reiki-attunement`}>
         Attunement
       </Link>
-      <Link className="c-navbar__link" activeClassName="active" to={`/psychic-spiritual-readings`}>
+      <Link className={classes} activeClassName="active" to={`/psychic-spiritual-readings`}>
         Readings
       </Link>
-      <Link className="c-navbar__link" activeClassName="active" to={`/pricing`}>
+      <Link className={classes} activeClassName="active" to={`/pricing`}>
         Pricing
       </Link>
-      <Link className="c-navbar__link" activeClassName="active" to={`/events`}>
-        Events
+      <Link className={classes} activeClassName="active" to={`/about`}>
+        About
       </Link>
-      <Link className="c-navbar__link" activeClassName="active" to={`/contact`}>
+      <Link className={classes} activeClassName="active" to={`/contact`}>
         Contact
       </Link>
     </>
@@ -52,7 +52,7 @@ const Layout = ({ location, children, title, description }) => {
             <Link className="c-navbar__link c-navbar__link--home" activeClassName="active" to={`/`}>
               Wetherby Healing
             </Link>
-            {renderNavLinks()}
+            {renderNavLinks(`c-navbar__link`)}
             <button
               className="c-navbar__link c-navbar__link--menu c-button c-button--nude"
               onClick={() => setMenuOpen(true)}>
@@ -95,15 +95,7 @@ const Layout = ({ location, children, title, description }) => {
           </Link>
         </div>
         <div>
-          <Link className="c-footer__link" to={`/events`}>
-            Events
-          </Link>
-          <Link className="c-footer__link" to={`/about`}>
-            About
-          </Link>
-          <Link className="c-footer__link" to={`/contact`}>
-            Contact
-          </Link>
+          {renderNavLinks(`c-footer__link`)}
           <div className="u-letter-box-large">&copy; {new Date().getFullYear()}</div>
         </div>
       </footer>

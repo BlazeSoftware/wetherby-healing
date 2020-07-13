@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Wetherby Health`,
+    title: `Wetherby Healing`,
     description: `The spiritual route to healing and health delivered by clairvoyant and Reiki Master Deborah Watson.`,
-    siteUrl: `https://wetherby-health.com/`,
+    siteUrl: `https://wetherby-healing.com/`,
   },
   plugins: [
     `gatsby-plugin-netlify`,
@@ -76,8 +76,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Wetherby Health`,
-        short_name: `Wetherby Health`,
+        name: `Wetherby Healing`,
+        short_name: `Wetherby Healing`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#19a89e`,
