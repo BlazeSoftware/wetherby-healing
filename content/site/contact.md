@@ -1,6 +1,6 @@
 ---
 title: Get In Touch
-description: We'd love to hear from you. Drop us a line.
+description: I'd love to hear from you. Drop me a line.
 ---
 ## Opening times
 
@@ -14,7 +14,3 @@ We're closed Sundays and bank holidays.
 Office: [0113 2123456](<tel:0113 2123456>)
 
 Mobile: [071234 123456](<tel:071234 123456>)
-
-## Email
-
-[hello@wetherbyhealing.com ](mailto:hello@wetherbyhealing.com)

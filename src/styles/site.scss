@@ -47,3 +47,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+
+textarea {
+  resize: vertical;
+}

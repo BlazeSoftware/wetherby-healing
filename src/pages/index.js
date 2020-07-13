@@ -30,12 +30,12 @@ const HomePage = ({ location }) => {
     }
   `);
   const {
-    frontmatter: { title },
+    frontmatter: { title, description },
     html,
   } = data.allMarkdownRemark.edges[0].node;
 
   return (
-    <Layout location={location} title={title} description={data.site.siteMetadata.description}>
+    <Layout location={location} title={title} description={description || data.site.siteMetadata.description}>
       {html && (
         <section
           className="o-container o-container--medium u-window-box-large u-justified u-copy"

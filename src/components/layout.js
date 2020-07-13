@@ -45,7 +45,7 @@ const Layout = ({ location, children, title, description }) => {
 
   return (
     <div className="c-layout u-text">
-      <SEO title={title} description={description} />
+      <SEO title={location.pathname === `/` ? `Welcome` : title} description={description} />
       <header>
         <nav className="o-navbar">
           <div className="c-navbar">
