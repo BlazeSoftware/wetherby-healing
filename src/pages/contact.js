@@ -29,7 +29,7 @@ const ContactPage = ({ location }) => {
   return (
     <Layout location={location} title={title} description={description}>
       <div className="o-contact o-container o-container--small u-pillar-box-large">
-        <form name="contact" method="POST" netlify action="/thanks">
+        <form name="contact" method="POST" action="/thanks" data-netlify={true}>
           <label class="o-form-element c-label" htmlFor="name">
             Name
             <input id="name" name="name" class="c-field" required />
