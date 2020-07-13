@@ -1,6 +1,7 @@
 ---
 title: Reiki Healing
-description: What is Reiki?
+description: Reiki is a Japanese technique for stress reduction and relaxation
+  that also promotes healing.
 featuredImage: /img/event-three.jpg
 ---
 ## What is Reiki?
