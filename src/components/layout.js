@@ -54,6 +54,7 @@ const Layout = ({ location, children, title, description }) => {
             </Link>
             {renderNavLinks(`c-navbar__link`)}
             <button
+              aria-label="Menu button"
               className="c-navbar__link c-navbar__link--menu c-button c-button--nude"
               onClick={() => setMenuOpen(true)}>
               <i className="fas fa-bars"></i>
