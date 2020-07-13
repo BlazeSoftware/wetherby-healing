@@ -30,6 +30,7 @@ const ContactPage = ({ location }) => {
     <Layout location={location} title={title} description={description}>
       <div className="o-contact o-container o-container--small u-pillar-box-large">
         <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact" />
           <label class="o-form-element c-label" htmlFor="name">
             Name
             <input id="name" name="name" class="c-field" required />
