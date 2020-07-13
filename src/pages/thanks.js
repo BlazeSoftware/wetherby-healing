@@ -29,7 +29,7 @@ const ContactSuccessPage = ({ location }) => {
   return (
     <Layout location={location} title={title} description={description}>
       <div className="o-container o-container--medium u-centered u-window-box-large u-copy">
-        <h1 class="c-heading">Thank you for your message!</h1>
+        <h1 className="c-heading">Thank you for your message!</h1>
       </div>
       <div className="o-contact">
         <div className="o-page">

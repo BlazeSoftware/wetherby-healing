@@ -26,12 +26,24 @@ const HomePage = ({ location }) => {
           }
         }
       }
+      principles: allMarkdownRemark(filter: { fields: { slug: { regex: "^/site/principles-of-reiki/" } } }) {
+        edges {
+          node {
+            frontmatter {
+              title
+            }
+            html
+          }
+        }
+      }
     }
   `);
   const {
     frontmatter: { title },
     html,
   } = data.allMarkdownRemark.edges[0].node;
+
+  const principles = data.principles.edges[0].node;
 
   return (
     <Layout location={location} title={title} description={data.site.siteMetadata.description}>
@@ -40,6 +52,12 @@ const HomePage = ({ location }) => {
           className="o-container o-container--medium u-window-box-large u-justified u-copy"
           dangerouslySetInnerHTML={{ __html: html }}
         />
+      )}
+      {principles && (
+        <section className="o-container o-container--medium u-window-box-large u-justified u-copy">
+          <h2 className="c-heading u-centered">{principles.frontmatter.title}</h2>
+          <div className="u-centered" dangerouslySetInnerHTML={{ __html: principles.html }} />
+        </section>
       )}
       <TestimonialsList />
       <Bio />

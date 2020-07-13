@@ -45,8 +45,8 @@ const PricingPage = ({ location }) => {
       <div className="o-pricing">
         <div className="o-page">
           <section className="o-container o-container--large u-window-box-large u-copy">
-            {data.sections.edges.map(({ node }) => (
-              <div>
+            {data.sections.edges.map(({ node }, i) => (
+              <div key={node.frontmatter.title + i}>
                 <h2 className="c-heading">{node.frontmatter.title}</h2>
                 <div dangerouslySetInnerHTML={{ __html: node.html }} />
               </div>

@@ -1,10 +1,9 @@
 ---
 title: Reiki Attunement
-description: Reiki is not 'taught' as such. Instead, the person who would like
-  to perform Reiki is given an attunement, which can only be given by a Reiki
-  Master.
+description: Reiki is not 'taught' as such. Instead, the person who would like to perform Reiki is given an attunement, which can only be given by a Reiki Master.
 featuredImage: /img/event-four.jpg
 ---
+
 A Reiki attunement is a process of empowerment that opens the chakras needed for working as a Reiki healer. It connects you to the unlimited source of Reiki energy and, for a time after the attunement, changes will be made by the energy, which opens your system — enabling you to channel Reiki. These changes take place metaphysically in the chakras and the aura as well as the physical body. An emotional as well as toxic release can take place as part of this clearing process.
 
 Prior to your attunement you will be given a checklist, which should be completed 3 to 5 days beforehand.
@@ -21,10 +20,10 @@ This level is for family, friends, pets and animals. (Please note: you cannot ch
 
 Your attunement will consist of:
 
-* Being shown the hand positions for full body treatment, front and back.
-* Hand positions for self-healing.
-* Hand positions for healing whilst person is seated.
-* How to use Reiki on plants and animals.
+- Being shown the hand positions for full body treatment, front and back.
+- Hand positions for self-healing.
+- Hand positions for healing whilst person is seated.
+- How to use Reiki on plants and animals.
 
 ## Reiki II or 2nd Degree
 

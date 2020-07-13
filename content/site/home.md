@@ -16,15 +16,3 @@ Reiki is a Japanese technique that promotes relaxation, reduces stress and encou
 ## Attunements
 
 The ability to use Reiki is simple to learn and is transferred to students during a class, known as an ‘attunement', given by a Reiki master. Students will then be able to use their new skills to enhance the quality of other people's lives.
-
-## The Five Principles of Reiki
-
-Just for today do not worry
-
-Just for today do not anger
-
-Honour your parents, teachers and elders
-
-Earn you living honestly
-
-Show gratitude to every living thing

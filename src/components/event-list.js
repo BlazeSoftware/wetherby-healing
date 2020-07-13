@@ -39,7 +39,7 @@ const EventList = () => {
     <section>
       <h2 className="c-heading c-heading--secondary">Previous Events</h2>
       <div>
-        {events.map(({ node: { fields, frontmatter, excerpt } }) => {
+        {events.map(({ node: { fields, frontmatter, excerpt } }, i) => {
           const props = {
             slug: fields.slug,
             title: frontmatter.title,
@@ -47,7 +47,7 @@ const EventList = () => {
             description: frontmatter.description || excerpt,
           };
 
-          return <EventLink {...props} />;
+          return <EventLink key={frontmatter.title + i} {...props} />;
         })}
       </div>
     </section>

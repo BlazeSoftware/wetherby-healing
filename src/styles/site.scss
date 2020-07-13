@@ -40,7 +40,10 @@ body {
 
 .c-heading {
   font-weight: var(--text-font-weight);
-  text-transform: capitalize;
+
+  &:not(.c-heading--sub) {
+    text-transform: capitalize;
+  }
 }
 
 .o-page-nav {

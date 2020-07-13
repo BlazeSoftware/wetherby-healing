@@ -51,13 +51,20 @@ collections:
           - { label: Title, name: title, widget: string }
           - { label: Body, name: body, widget: markdown }
 
+      - file: content/site/principles-of-reiki.md
+        label: Principles of Reiki
+        name: principles-of-reiki
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Body, name: body, widget: markdown }
+
       - file: content/site/pricing-readings.md
         label: Pricing Readings
         name: pricing-readings
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Body, name: body, widget: markdown }
-      
+
       - file: content/site/pricing-reiki-attunement.md
         label: Pricing Reiki Attunement
         name: pricing-reiki-attunement
@@ -96,6 +103,7 @@ collections:
           - { label: Title, name: title, widget: string }
           - { label: Description, name: description, widget: string }
           - { label: Body, name: body, widget: markdown }
+          - { label: Featured Image, name: featuredImage, widget: image }
 
       - file: content/site/psychic-spiritual-readings.md
         label: Psychic Spiritual Readings Page
@@ -104,6 +112,7 @@ collections:
           - { label: Title, name: title, widget: string }
           - { label: Description, name: description, widget: string }
           - { label: Body, name: body, widget: markdown }
+          - { label: Featured Image, name: featuredImage, widget: image }
 
       - file: content/site/reiki-attunement.md
         label: Reiki Attunement Page
@@ -112,6 +121,7 @@ collections:
           - { label: Title, name: title, widget: string }
           - { label: Description, name: description, widget: string }
           - { label: Body, name: body, widget: markdown }
+          - { label: Featured Image, name: featuredImage, widget: image }
 
       - file: content/site/reiki-healing.md
         label: Reiki Healing Page
@@ -120,3 +130,4 @@ collections:
           - { label: Title, name: title, widget: string }
           - { label: Description, name: description, widget: string }
           - { label: Body, name: body, widget: markdown }
+          - { label: Featured Image, name: featuredImage, widget: image }
