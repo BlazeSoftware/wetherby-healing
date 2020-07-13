@@ -66,7 +66,7 @@ const Layout = ({ location, children, title, description }) => {
                 <Link className="c-navbar__link" activeClassName="active" to={`/`}>
                   Home
                 </Link>
-                {renderNavLinks()}
+                {renderNavLinks(`c-navbar__link`)}
               </nav>
             </aside>
           </div>
