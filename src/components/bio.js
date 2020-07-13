@@ -7,13 +7,12 @@ import './bio.scss';
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
-      allMarkdownRemark(filter: { fields: { slug: { regex: "^/site/home/" } } }) {
+      allMarkdownRemark(filter: { fields: { slug: { regex: "^/site/bio/" } } }) {
         edges {
           node {
             frontmatter {
-              profileTitle
-              profile
-              profileImage {
+              title
+              bioImage {
                 childImageSharp {
                   fluid(maxWidth: 512) {
                     ...GatsbyImageSharpFluid
@@ -21,22 +20,26 @@ const Bio = () => {
                 }
               }
             }
+            html
           }
         }
       }
     }
   `);
 
-  const { profileTitle, profile, profileImage } = data.allMarkdownRemark.edges[0].node.frontmatter;
+  const { title, bioImage } = data.allMarkdownRemark.edges[0].node.frontmatter;
+  const html = data.allMarkdownRemark.edges[0].node.html;
 
   return (
     <div className="c-bio o-container">
       <div>
-        <Img className="c-bio__image u-high" fluid={profileImage.childImageSharp.fluid} alt={profileTitle} />
+        <Img className="c-bio__image u-high" fluid={bioImage.childImageSharp.fluid} alt={title} />
       </div>
       <div>
-        <h2 className="c-bio__title c-heading">{profileTitle}</h2>
-        <div className="c-bio__description u-copy">{profile}</div>
+        <h2 className="c-bio__title c-heading">{title}</h2>
+        <div className="c-bio__description u-copy">
+          <div dangerouslySetInnerHTML={{ __html: html }} />
+        </div>
       </div>
     </div>
   );

@@ -1,26 +1,33 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import PageTemplate from '../components/page';
+import Layout from '../components/layout';
 
 import './pricing.scss';
 
 const PricingPage = ({ location }) => {
   const data = useStaticQuery(graphql`
     query PricingQuery {
-      allMarkdownRemark(filter: { fields: { slug: { regex: "^/site/pricing/" } } }) {
+      page: allMarkdownRemark(
+        filter: { fields: { slug: { regex: "^/site/pricing/" } }, frontmatter: { description: { ne: null } } }
+      ) {
         edges {
           node {
             frontmatter {
               title
               description
-              featuredImage {
-                childImageSharp {
-                  fluid(maxWidth: 600) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
+            }
+          }
+        }
+      }
+      sections: allMarkdownRemark(
+        filter: { fields: { slug: { regex: "^/site/pricing/" } }, html: { ne: "" } }
+        sort: { fields: frontmatter___weight }
+      ) {
+        edges {
+          node {
+            frontmatter {
+              title
             }
             html
           }
@@ -28,10 +35,26 @@ const PricingPage = ({ location }) => {
       }
     }
   `);
+
+  const {
+    frontmatter: { title, description },
+  } = data.page.edges[0].node;
+
   return (
-    <div className="o-pricing">
-      <PageTemplate {...{ location, data }} />
-    </div>
+    <Layout location={location} title={title} description={description}>
+      <div className="o-pricing">
+        <div className="o-page">
+          <section className="o-container o-container--large u-window-box-large u-copy">
+            {data.sections.edges.map(({ node }) => (
+              <div>
+                <h2 className="c-heading">{node.frontmatter.title}</h2>
+                <div dangerouslySetInnerHTML={{ __html: node.html }} />
+              </div>
+            ))}
+          </section>
+        </div>
+      </div>
+    </Layout>
   );
 };
 

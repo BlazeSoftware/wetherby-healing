@@ -1,30 +1,39 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import './contact.scss';
 import Layout from '../components/layout';
+
+import './contact.scss';
 
 const ContactPage = ({ location }) => {
   const data = useStaticQuery(graphql`
-    query ContactQuery {
-      allMarkdownRemark(filter: { fields: { slug: { regex: "^/site/contact/" } } }) {
-        edges {
-          node {
-            frontmatter {
-              title
-              description
-            }
-            html
+  query ContactQuery {
+    page: allMarkdownRemark(filter: {fields: {slug: {regex: "^/site/contact/"}}, frontmatter: {description: {ne: null}}}) {
+      edges {
+        node {
+          frontmatter {
+            title
+            description
           }
         }
       }
     }
+    sections: allMarkdownRemark(filter: {fields: {slug: {regex: "^/site/contact/"}}, html: {ne: ""}}, sort: {fields: frontmatter___weight}) {
+      edges {
+        node {
+          frontmatter {
+            title
+          }
+          html
+        }
+      }
+    }
+  }
   `);
 
   const {
     frontmatter: { title, description },
-    html,
-  } = data.allMarkdownRemark.edges[0].node;
+  } = data.page.edges[0].node;
 
   return (
     <Layout location={location} title={title} description={description}>
@@ -59,10 +68,14 @@ const ContactPage = ({ location }) => {
       </div>
       <div className="o-contact">
         <div className="o-page">
-          <section
-            className="o-container o-container--large u-window-box-large u-copy"
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
+          <section className="o-container o-container--large u-window-box-large u-copy">
+            {data.sections.edges.map(({ node }) => (
+              <div>
+                <h2 className="c-heading">{node.frontmatter.title}</h2>
+                <div dangerouslySetInnerHTML={{ __html: node.html }} />
+              </div>
+            ))}
+          </section>
         </div>
       </div>
     </Layout>

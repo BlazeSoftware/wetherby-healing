@@ -23,6 +23,7 @@ const TestimonialsList = () => {
             frontmatter {
               title
               description
+              customer
             }
           }
         }
@@ -41,7 +42,7 @@ const TestimonialsList = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
-    pauseOnHover: false
+    pauseOnHover: false,
   };
 
   return (
@@ -53,7 +54,10 @@ const TestimonialsList = () => {
             return (
               <div className="c-slide u-letter-box-small" key={frontmatter.title + i}>
                 <h2 className="c-slide__heading u-centered u-xlarge">{frontmatter.title}</h2>
-                <div className="c-slide__text u-italic u-centered">{frontmatter.description}</div>
+                <div className="c-slide__text u-centered">{frontmatter.description}</div>
+                {frontmatter.customer && (
+                  <div className="c-slide__text u-text--italic u-centered u-letter-box-medium">- {frontmatter.customer} -</div>
+                )}
               </div>
             );
           })}

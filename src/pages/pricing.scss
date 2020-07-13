@@ -4,11 +4,9 @@
   @include screen-and-up(large) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr;
-    grid-auto-flow: column;
     gap: 0 5em;
     align-items: baseline;
-    justify-items: baseline;
+    justify-items: center;
     padding-bottom: 3em !important;
   }
 }
