@@ -9,7 +9,7 @@ const PricingPage = ({ location }) => {
   const data = useStaticQuery(graphql`
     query PricingQuery {
       page: allMarkdownRemark(
-        filter: { fields: { slug: { regex: "^/site/pricing/" } }, frontmatter: { description: { ne: null } } }
+        filter: { fields: { slug: { regex: "^/site/pricing/" } } }
       ) {
         edges {
           node {
@@ -20,8 +20,8 @@ const PricingPage = ({ location }) => {
           }
         }
       }
-      sections: allMarkdownRemark(
-        filter: { fields: { slug: { regex: "^/site/pricing/" } }, html: { ne: "" } }
+      blocks: allMarkdownRemark(
+        filter: { fields: { slug: { regex: "^/blocks/pricing/" } } }
         sort: { fields: frontmatter___weight }
       ) {
         edges {
@@ -45,7 +45,7 @@ const PricingPage = ({ location }) => {
       <div className="o-pricing">
         <div className="o-page">
           <section className="o-container o-container--large u-window-box-large u-copy">
-            {data.sections.edges.map(({ node }, i) => (
+            {data.blocks.edges.map(({ node }, i) => (
               <div key={node.frontmatter.title + i}>
                 <h2 className="c-heading">{node.frontmatter.title}</h2>
                 <div dangerouslySetInnerHTML={{ __html: node.html }} />

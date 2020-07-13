@@ -26,10 +26,10 @@ collections:
       - { label: Description, name: description, widget: text }
       - { label: Customer, name: customer, widget: string }
 
-  - name: sections
+  - name: blocks
     label: Content Blocks
     files:
-      - file: content/site/bio.md
+      - file: content/blocks/bio.md
         label: Bio
         name: bio
         fields:
@@ -37,45 +37,50 @@ collections:
           - { label: Profile Picture, name: bioImage, widget: image }
           - { label: Body, name: body, widget: markdown }
 
-      - file: content/site/contact-opening-times.md
+      - file: content/blocks/contact-opening-times.md
         label: Opening Times
         name: opening-iimes
         fields:
+          - { label: weight, name: weight, widget: hidden }
           - { label: Title, name: title, widget: string }
           - { label: Body, name: body, widget: markdown }
 
-      - file: content/site/contact-info.md
+      - file: content/blocks/contact-info.md
         label: Contact Info
         name: contact-info
         fields:
+          - { label: weight, name: weight, widget: hidden }
           - { label: Title, name: title, widget: string }
           - { label: Body, name: body, widget: markdown }
 
-      - file: content/site/principles-of-reiki.md
+      - file: content/blocks/principles-of-reiki.md
         label: Principles of Reiki
         name: principles-of-reiki
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Body, name: body, widget: markdown }
 
-      - file: content/site/pricing-readings.md
+      - file: content/blocks/pricing-readings.md
         label: Pricing Readings
         name: pricing-readings
         fields:
+          - { label: weight, name: weight, widget: hidden }
           - { label: Title, name: title, widget: string }
           - { label: Body, name: body, widget: markdown }
 
-      - file: content/site/pricing-reiki-attunement.md
+      - file: content/blocks/pricing-reiki-attunement.md
         label: Pricing Reiki Attunement
         name: pricing-reiki-attunement
         fields:
+          - { label: weight, name: weight, widget: hidden }
           - { label: Title, name: title, widget: string }
           - { label: Body, name: body, widget: markdown }
 
-      - file: content/site/pricing-reiki-treatment.md
+      - file: content/blocks/pricing-reiki-treatment.md
         label: Pricing Reiki Treatment
         name: pricing-reiki-treatment
         fields:
+          - { label: weight, name: weight, widget: hidden }
           - { label: Title, name: title, widget: string }
           - { label: Body, name: body, widget: markdown }
 

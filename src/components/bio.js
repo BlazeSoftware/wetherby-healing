@@ -7,7 +7,7 @@ import './bio.scss';
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
-      allMarkdownRemark(filter: { fields: { slug: { regex: "^/site/bio/" } } }) {
+      allMarkdownRemark(filter: { fields: { slug: { regex: "^/blocks/bio/" } } }) {
         edges {
           node {
             frontmatter {

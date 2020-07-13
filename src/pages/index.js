@@ -26,7 +26,7 @@ const HomePage = ({ location }) => {
           }
         }
       }
-      principles: allMarkdownRemark(filter: { fields: { slug: { regex: "^/site/principles-of-reiki/" } } }) {
+      principles: allMarkdownRemark(filter: { fields: { slug: { regex: "^/blocks/principles-of-reiki/" } } }) {
         edges {
           node {
             frontmatter {

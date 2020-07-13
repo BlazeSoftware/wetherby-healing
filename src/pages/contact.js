@@ -7,28 +7,33 @@ import './contact.scss';
 
 const ContactPage = ({ location }) => {
   const data = useStaticQuery(graphql`
-  query ContactQuery {
-    page: allMarkdownRemark(filter: {fields: {slug: {regex: "^/site/contact/"}}, frontmatter: {description: {ne: null}}}) {
-      edges {
-        node {
-          frontmatter {
-            title
-            description
+    query ContactQuery {
+      page: allMarkdownRemark(
+        filter: { fields: { slug: { regex: "^/site/contact/" } } }
+      ) {
+        edges {
+          node {
+            frontmatter {
+              title
+              description
+            }
+          }
+        }
+      }
+      blocks: allMarkdownRemark(
+        filter: { fields: { slug: { regex: "^/blocks/contact/" } } }
+        sort: { fields: frontmatter___weight }
+      ) {
+        edges {
+          node {
+            frontmatter {
+              title
+            }
+            html
           }
         }
       }
     }
-    sections: allMarkdownRemark(filter: {fields: {slug: {regex: "^/site/contact/"}}, html: {ne: ""}}, sort: {fields: frontmatter___weight}) {
-      edges {
-        node {
-          frontmatter {
-            title
-          }
-          html
-        }
-      }
-    }
-  }
   `);
 
   const {
@@ -69,7 +74,7 @@ const ContactPage = ({ location }) => {
       <div className="o-contact">
         <div className="o-page">
           <section className="o-container o-container--large u-window-box-large u-copy">
-            {data.sections.edges.map(({ node }, i) => (
+            {data.blocks.edges.map(({ node }, i) => (
               <div key={node.frontmatter.title + i}>
                 <h2 className="c-heading">{node.frontmatter.title}</h2>
                 <div dangerouslySetInnerHTML={{ __html: node.html }} />
