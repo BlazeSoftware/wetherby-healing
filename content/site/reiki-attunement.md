@@ -1,7 +1,9 @@
 ---
 title: Reiki Attunement
-description: Reiki is not 'taught' as such. Instead, the person who would like to perform Reiki is given an attunement, which can only be given by a Reiki Master.
-featuredImage: /img/event-four.jpg
+description: Reiki is not 'taught' as such. Instead, the person who would like
+  to perform Reiki is given an attunement, which can only be given by a Reiki
+  Master.
+featuredImage: /img/reiki.jpg
 ---
 
 A Reiki attunement is a process of empowerment that opens the chakras needed for working as a Reiki healer. It connects you to the unlimited source of Reiki energy and, for a time after the attunement, changes will be made by the energy, which opens your system — enabling you to channel Reiki. These changes take place metaphysically in the chakras and the aura as well as the physical body. An emotional as well as toxic release can take place as part of this clearing process.
