@@ -2,7 +2,7 @@
 title: Psychic & Spiritual Readings
 description: For anyone coming for a reading it is important for them to relax
   and keep an open mind.
-featuredImage: /img/event-two.jpg
+featuredImage: /img/crystals.jpg
 ---
 ## Psychic and spiritual readings
 
@@ -25,3 +25,5 @@ These proceed in a similar fashion to the above, except that you bring with you 
 ## Tarot Readings
 
 Tarot readings are now combined with your one to one reading.
+
+![Tarot cards](/img/tarot.jpg "Tarot cards")
