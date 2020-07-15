@@ -33,7 +33,7 @@ collections:
         label: Bio
         name: bio
         fields:
-          - { label: Title, name: profileTitle, widget: string }
+          - { label: Title, name: title, widget: string }
           - { label: Profile Picture, name: bioImage, widget: image }
           - { label: Body, name: body, widget: markdown }
 
@@ -97,6 +97,13 @@ collections:
       - file: content/site/contact.md
         label: Contact Page
         name: contact
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Description, name: description, widget: string }
+
+      - file: content/site/pricing.md
+        label: Pricing Page
+        name: pricing
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Description, name: description, widget: string }
