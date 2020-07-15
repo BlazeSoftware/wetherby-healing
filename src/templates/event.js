@@ -5,16 +5,18 @@ import Img from 'gatsby-image';
 import Layout from '../components/layout';
 
 const EventTemplate = ({ data, pageContext, location }) => {
-  const post = data.markdownRemark;
+  const { frontmatter, excerpt, html } = data.markdownRemark;
   const { previous, next } = pageContext;
 
   return (
-    <Layout location={location} title={post.frontmatter.title} description={post.frontmatter.description || post.excerpt}>
+    <Layout location={location} title={frontmatter.title} description={frontmatter.description || excerpt}>
       <article>
         <header>
-          <Img fluid={post.frontmatter.featuredImage.childImageSharp.fluid} alt={post.frontmatter.title} />
+          {frontmatter.featuredImage && frontmatter.featuredImage.childImageSharp && (
+            <Img fluid={frontmatter.featuredImage.childImageSharp.fluid} alt={frontmatter.title} />
+          )}
         </header>
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
+        <section dangerouslySetInnerHTML={{ __html: html }} />
       </article>
 
       <nav className="o-page-nav u-letter-box-super">

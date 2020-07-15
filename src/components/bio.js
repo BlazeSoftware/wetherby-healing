@@ -33,7 +33,9 @@ const Bio = () => {
   return (
     <div className="c-bio o-container">
       <div>
-        <Img className="c-bio__image u-high" fluid={bioImage.childImageSharp.fluid} alt={title} />
+        {bioImage && bioImage.childImageSharp && (
+          <Img className="c-bio__image u-high" fluid={bioImage.childImageSharp.fluid} alt={title} />
+        )}
       </div>
       <div>
         <h2 className="c-bio__title c-heading">{title}</h2>

@@ -9,7 +9,9 @@ const EventLink = ({ slug, title, description, featuredImage }) => (
     <div className="c-event-link__title">
       <h2 className="c-heading">{title}</h2>
     </div>
-    <Img className="c-event-link__image" fluid={featuredImage.childImageSharp.fluid} alt={title} />
+    {featuredImage && featuredImage.childImageSharp && (
+      <Img className="c-event-link__image" fluid={featuredImage.childImageSharp.fluid} alt={title} />
+    )}
     <div className="c-event-link__description">
       <span>{description}</span>
     </div>
