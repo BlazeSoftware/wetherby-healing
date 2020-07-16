@@ -7,5 +7,5 @@ description: Deborah is such a lovely lady, she made me feel at ease straight
   amazed and was what I needed to hear. I also had my cards read which I
   enjoyed. Would recommend going to see Deborah, I know I will definitely be in
   touch with her again. Thank you very much
-customer: Linda Carrington
+customer: Michelle Bartram
 ---
