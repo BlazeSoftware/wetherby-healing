@@ -1,7 +1,7 @@
 ---
-title: Really good time!
-description: estas nec metus sit amet, aliquam semper mauris. Nullam sodales
-  nisi non ligula iaculis, et gravida tellus eleifend. In interdum maximus
-  pharetra. Fusce!
-customer: Janet Wan
+title: Feeling relaxed
+description: Today I had a zoom reading today and I would highly recommend it to
+  anyone. I feel so much brighter now and able to move forwards.  Thank you so
+  much.
+customer: Gillian Green
 ---
