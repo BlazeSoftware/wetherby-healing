@@ -26,6 +26,8 @@ These proceed in a similar fashion to the above, except that you bring with you 
 
 **Past, Present and Potential**
 
+This is to help guide you along with pathway!  Giving messages from your spirit guides and helpers to assist you giving guidance and reassurance where needed. This is on a one to one basis. 
+
 ## Tarot Readings
 
 Tarot readings are now combined with your one to one reading.
