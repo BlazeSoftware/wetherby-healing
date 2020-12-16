@@ -4,7 +4,7 @@ description: For anyone coming for a reading it is important for them to relax
   and keep an open mind.
 featuredImage: /img/crystals.jpg
 ---
-## Psychic and spiritual readings
+# Psychic and spiritual readings
 
 Readings are conducted in a peaceful, dedicated room in my house in Wetherby. For people with disabilities or mobility issues I am willing to do home visits. If the traveling distance is greater than 5 miles I will need to make an additional charge to cover my costs, which will be agreed at the time of booking.
 
@@ -21,6 +21,10 @@ I always finish with a tarot reading. It helps to confirm the information in whi
 ## Photo Readings or Object Readings
 
 These proceed in a similar fashion to the above, except that you bring with you a photograph or object, which could relate to yourself or someone who has passed over. I tune into the picture or the object. It should be noted that it is not always possible to bring the loved one forward and I always stress this before I begin your reading.
+
+**ORACLE/GUIDANCE READINGS**
+
+**Past, Present and Potential**
 
 ## Tarot Readings
 
