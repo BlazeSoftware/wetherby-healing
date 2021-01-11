@@ -31,6 +31,9 @@ const Layout = ({ location, children, title, description }) => {
       <Link className={classes} activeClassName="active" to={`/psychic-spiritual-readings`}>
         Readings
       </Link>
+      <Link className={classes} activeClassName="active" to={`/spiritual-assessments`}>
+        Assessments
+      </Link>
       <Link className={classes} activeClassName="active" to={`/pricing`}>
         Pricing
       </Link>

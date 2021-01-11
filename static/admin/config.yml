@@ -76,6 +76,14 @@ collections:
           - { label: Title, name: title, widget: string }
           - { label: Body, name: body, widget: markdown }
 
+      - file: content/blocks/pricing-spiritual-assessments.md
+        label: Pricing Spiritual Assessments
+        name: pricing-spiritual-assessments
+        fields:
+          - { label: weight, name: weight, widget: hidden }
+          - { label: Title, name: title, widget: string }
+          - { label: Body, name: body, widget: markdown }
+
       - file: content/blocks/pricing-reiki-treatment.md
         label: Pricing Reiki Treatment
         name: pricing-reiki-treatment
@@ -129,6 +137,15 @@ collections:
       - file: content/site/reiki-attunement.md
         label: Reiki Attunement Page
         name: reiki-attunement
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Description, name: description, widget: string }
+          - { label: Body, name: body, widget: markdown }
+          - { label: Featured Image, name: featuredImage, widget: image }
+
+      - file: content/site/spiritual-assessments.md
+        label: Spiritual Assessments Page
+        name: spiritual-assessments
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Description, name: description, widget: string }

@@ -3,10 +3,10 @@
 .o-pricing .o-page .o-container {
   @include screen-and-up(large) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0 5em;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em 5em;
     align-items: baseline;
-    justify-items: center;
-    padding-bottom: 3em !important;
+    justify-items: left;
+    padding-bottom: 4em !important;
   }
 }
