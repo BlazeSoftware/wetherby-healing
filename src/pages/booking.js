@@ -84,8 +84,12 @@ const BookingPage = ({ location }) => {
             <input id="name" name="name" className="c-field" required />
           </label>
           <label className="o-form-element c-label">
+            Telephone
+            <input id="telephone" name="telephone" className="c-field" type="tel" required />
+          </label>
+          <label className="o-form-element c-label">
             Email
-            <input id="email" name="email" className="c-field" type="email" required />
+            <input id="email" name="email" className="c-field" type="email" />
           </label>
           <label className="o-form-element c-label">
             Day
