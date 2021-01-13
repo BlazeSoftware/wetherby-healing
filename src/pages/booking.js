@@ -79,24 +79,24 @@ const BookingPage = ({ location }) => {
           data-netlify-honeypot="bot-field"
           action="/booking-thanks">
           <input type="hidden" name="form-name" value="booking" />
-          <label className="o-form-element c-label" htmlFor="name">
+          <label className="o-form-element c-label">
             Name
             <input id="name" name="name" className="c-field" required />
           </label>
-          <label className="o-form-element c-label" htmlFor="email">
+          <label className="o-form-element c-label">
             Email
             <input id="email" name="email" className="c-field" type="email" required />
           </label>
-          <label className="o-form-element c-label" htmlFor="day">
+          <label className="o-form-element c-label">
             Day
-            <select id="day" name="day[]" className="c-field" required>
+            <select id="day" name="day" className="c-field" required>
               <option value="">Choose a day</option>
               {renderDates()}
             </select>
           </label>
-          <label className="o-form-element c-label" htmlFor="time">
+          <label className="o-form-element c-label">
             Time slot
-            <select id="time" name="time[]" className="c-field" required>
+            <select id="time" name="time" className="c-field" required>
               <option value="">Choose a time</option>
               <option value="9am">9am</option>
               <option value="10am">10am</option>
