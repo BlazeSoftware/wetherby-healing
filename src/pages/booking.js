@@ -89,14 +89,14 @@ const BookingPage = ({ location }) => {
           </label>
           <label className="o-form-element c-label" htmlFor="day">
             Day
-            <select id="day" name="day" className="c-field" required>
+            <select id="day" name="day[]" className="c-field" required>
               <option value="">Choose a day</option>
               {renderDates()}
             </select>
           </label>
           <label className="o-form-element c-label" htmlFor="time">
             Time slot
-            <select id="time" name="time" className="c-field" required>
+            <select id="time" name="time[]" className="c-field" required>
               <option value="">Choose a time</option>
               <option value="9am">9am</option>
               <option value="10am">10am</option>
