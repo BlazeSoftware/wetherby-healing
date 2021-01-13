@@ -43,7 +43,7 @@ const ContactPage = ({ location }) => {
   return (
     <Layout location={location} title={title} description={description}>
       <div className="o-contact o-container o-container--small u-pillar-box-large">
-        <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+        <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks">
           <input type="hidden" name="form-name" value="contact" />
           <label className="o-form-element c-label" htmlFor="name">
             Name
@@ -63,7 +63,7 @@ const ContactPage = ({ location }) => {
           </label>
           <div className="o-form-element">
             <button className="c-button c-button--block c-button--ghost">
-              Send Message{' '}
+              Send Message
               <span className="c-button__icon-right">
                 <i className="fas fa-paper-plane"></i>
               </span>

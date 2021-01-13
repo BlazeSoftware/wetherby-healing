@@ -37,6 +37,7 @@
     "typeface-playfair-display": "1.1.4"
   },
   "devDependencies": {
+    "moment": "^2.29.1",
     "prettier": "2.0.5"
   },
   "main": "n/a",
