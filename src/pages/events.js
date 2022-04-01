@@ -1,8 +1,12 @@
 import React from 'react';
 
-import Layout from '../components/layout';
 import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
+
+import Layout from '../components/layout';
 import EventList from '../components/event-list';
+
+import './events.scss';
 
 const EventsPage = ({ location }) => {
   const data = useStaticQuery(graphql`
@@ -13,6 +17,13 @@ const EventsPage = ({ location }) => {
             frontmatter {
               title
               description
+              featuredImage {
+                childImageSharp {
+                  fluid(maxWidth: 800) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
             }
             html
           }
@@ -21,15 +32,25 @@ const EventsPage = ({ location }) => {
     }
   `);
   const {
-    frontmatter: { title, description },
+    frontmatter: { title, description, featuredImage },
     html,
   } = data.allMarkdownRemark.edges[0].node;
 
   return (
     <Layout location={location} title={title} description={description}>
-      <section dangerouslySetInnerHTML={{ __html: html }} />
-      <div className="u-letter-box-small">
-        <EventList />
+      <div className="o-page o-container o-container--large u-copy">
+        {featuredImage && featuredImage.childImageSharp && (
+          <Img
+            className="o-page__image u-high"
+            style={{ maxWidth: `600px` }}
+            fluid={featuredImage.childImageSharp.fluid}
+            alt={title}
+          />
+        )}
+        <section className="u-window-box-large" dangerouslySetInnerHTML={{ __html: html }} />
+        <div className="u-window-box-large">
+          <EventList />
+        </div>
       </div>
     </Layout>
   );

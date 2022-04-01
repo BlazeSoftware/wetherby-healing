@@ -40,17 +40,6 @@ const BookingPage = ({ location }) => {
     frontmatter: { title, description },
   } = data.page.edges[0].node;
 
-  const daysINeed = [2, 4, 6];
-
-  function isThisInFuture(targetDayNum) {
-    const todayNum = moment().isoWeekday();
-
-    if (todayNum < targetDayNum) {
-      return moment().isoWeekday(targetDayNum);
-    }
-    return false;
-  }
-
   const renderDates = () => {
     const dates = [];
     let pointer = moment();

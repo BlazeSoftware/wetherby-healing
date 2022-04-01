@@ -34,17 +34,17 @@ const Layout = ({ location, children, title, description }) => {
       <Link className={classes} activeClassName="active" to={`/spiritual-assessments`}>
         Assessments
       </Link>
+      {/* <Link className={classes} activeClassName="active" to={`/events`}>
+        Events
+      </Link> */}
+      <Link className={classes} activeClassName="active" to={`/workshops/`}>
+        Workshops
+      </Link>
       <Link className={classes} activeClassName="active" to={`/pricing`}>
         Pricing
       </Link>
-      <Link className={classes} activeClassName="active" to={`/about`}>
-        About
-      </Link>
       <Link className={classes} activeClassName="active" to={`/booking`}>
         Booking
-      </Link>
-      <Link className={classes} activeClassName="active" to={`/contact`}>
-        Contact
       </Link>
     </>
   );
@@ -103,6 +103,12 @@ const Layout = ({ location, children, title, description }) => {
         </div>
         <div>
           {renderNavLinks(`c-footer__link`)}
+          <Link className="c-footer__link" activeClassName="active" to={`/about`}>
+            About
+          </Link>
+          <Link className="c-footer__link" activeClassName="active" to={`/contact`}>
+            Contact
+          </Link>
           <div className="u-letter-box-large">&copy; {new Date().getFullYear()}</div>
         </div>
       </footer>

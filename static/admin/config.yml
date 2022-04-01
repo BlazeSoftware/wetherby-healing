@@ -17,6 +17,18 @@ collections:
   #     - {label: Featured Image, name: featuredImage, widget: image}
   #     - {label: Body, name: body, widget: markdown}
 
+  - name: workshops
+    label: Workshops
+    folder: content/workshops
+    create: true
+    slug: {{year}}-{{month}}-{{day}}-{{slug}}
+    fields:
+      - {label: Title, name: title, widget: string}
+      - {label: Date, name: date, widget: datetime}
+      - {label: Description, name: description, widget: text}
+      - {label: Featured Image, name: featuredImage, widget: image}
+      - {label: Body, name: body, widget: markdown}
+
   - name: testimonials
     label: Testimonials
     folder: content/testimonials

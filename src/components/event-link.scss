@@ -41,6 +41,7 @@
     display: grid;
     background-color: var(--color-brand);
     height: 5em;
+    color: var(--color-text);
 
     @include screen-and-up(medium) {
       height: auto;
