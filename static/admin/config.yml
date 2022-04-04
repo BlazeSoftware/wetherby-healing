@@ -171,3 +171,12 @@ collections:
           - { label: Description, name: description, widget: string }
           - { label: Body, name: body, widget: markdown }
           - { label: Featured Image, name: featuredImage, widget: image }
+
+      - file: content/site/teaching.md
+        label: Workshop Page
+        name: workshop
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Description, name: description, widget: string }
+          - { label: Body, name: body, widget: markdown }
+          - { label: Featured Image, name: featuredImage, widget: image }
