@@ -22,11 +22,11 @@ collections:
     folder: content/workshops
     create: true
     fields:
-      - {label: Title, name: title, widget: string}
-      - {label: Date, name: date, widget: datetime}
-      - {label: Description, name: description, widget: text}
-      - {label: Featured Image, name: featuredImage, widget: image}
-      - {label: Body, name: body, widget: markdown}
+      - { label: Title, name: title, widget: string }
+      - { label: Date, name: date, widget: datetime }
+      - { label: Description, name: description, widget: text }
+      - { label: Featured Image, name: featuredImage, widget: image }
+      - { label: Body, name: body, widget: markdown }
 
   - name: testimonials
     label: Testimonials
