@@ -135,6 +135,15 @@ collections:
           - { label: Body, name: body, widget: markdown }
           - { label: Featured Image, name: featuredImage, widget: image }
 
+      - file: content/site/calendar.md
+        label: Events Page
+        name: events
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Description, name: description, widget: string }
+          - { label: Body, name: body, widget: markdown }
+          - { label: Featured Image, name: featuredImage, widget: image }
+
       - file: content/site/psychic-spiritual-readings.md
         label: Psychic Spiritual Readings Page
         name: psychic-spiritual-readings
