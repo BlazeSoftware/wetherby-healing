@@ -5,17 +5,16 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  # - name: events
-  #   label: Events
-  #   folder: content/events
-  #   create: true
-  #   slug: {{year}}-{{month}}-{{day}}-{{slug}}
-  #   fields:
-  #     - {label: Title, name: title, widget: string}
-  #     - {label: Date, name: date, widget: datetime}
-  #     - {label: Description, name: description, widget: text}
-  #     - {label: Featured Image, name: featuredImage, widget: image}
-  #     - {label: Body, name: body, widget: markdown}
+  - name: events
+    label: Events
+    folder: content/events
+    create: true
+    fields:
+      - {label: Title, name: title, widget: string}
+      - {label: Date, name: date, widget: datetime}
+      - {label: Description, name: description, widget: text}
+      - {label: Featured Image, name: featuredImage, widget: image}
+      - {label: Body, name: body, widget: markdown}
 
   - name: workshops
     label: Workshops
