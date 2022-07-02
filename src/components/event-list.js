@@ -37,7 +37,7 @@ const EventList = () => {
 
   return (
     <section>
-      <h2 className="c-heading c-heading--secondary">Previous Events</h2>
+      <h2 className="c-heading c-heading--secondary">Events</h2>
       <div>
         {events.map(({ node: { fields, frontmatter, excerpt } }, i) => {
           const props = {
