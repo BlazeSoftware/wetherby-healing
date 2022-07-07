@@ -34,9 +34,9 @@ const Layout = ({ location, children, title, description }) => {
       <Link className={classes} activeClassName="active" to={`/spiritual-assessments`}>
         Assessments
       </Link>
-      {/* <Link className={classes} activeClassName="active" to={`/events`}>
+      <Link className={classes} activeClassName="active" to={`/events`}>
         Events
-      </Link> */}
+      </Link>
       <Link className={classes} activeClassName="active" to={`/workshops/`}>
         Workshops
       </Link>
