@@ -1,6 +1,6 @@
 ---
 title: Events
 description: Holistic and Wellbeing Fair
-featuredImage: /img/event-four.jpg
+featuredImage: /img/wellbeing-and-holistic-fair-from-printworks.jpg
 ---
 #
