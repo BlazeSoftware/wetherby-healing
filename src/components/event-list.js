@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import EventLink from './event-link';
+import EventPoster from './event-poster';
 
 const EventList = () => {
   const data = useStaticQuery(graphql`
@@ -11,14 +11,9 @@ const EventList = () => {
       ) {
         edges {
           node {
-            excerpt
-            fields {
-              slug
-            }
             frontmatter {
               date(formatString: "MMMM DD, YYYY")
               title
-              description
               featuredImage {
                 childImageSharp {
                   fluid(maxWidth: 800) {
@@ -37,19 +32,14 @@ const EventList = () => {
 
   return (
     <section>
-      <h2 className="c-heading c-heading--secondary">Events</h2>
-      <div>
-        {events.map(({ node: { fields, frontmatter, excerpt } }, i) => {
-          const props = {
-            slug: fields.slug,
-            title: frontmatter.title,
-            featuredImage: frontmatter.featuredImage,
-            description: frontmatter.description || excerpt,
-          };
+      {events.map(({ node: { frontmatter } }, i) => {
+        const props = {
+          title: frontmatter.title,
+          featuredImage: frontmatter.featuredImage,
+        };
 
-          return <EventLink key={frontmatter.title + i} {...props} />;
-        })}
-      </div>
+        return <EventPoster key={frontmatter.title + i} {...props} />;
+      })}
     </section>
   );
 };

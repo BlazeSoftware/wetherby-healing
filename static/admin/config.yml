@@ -12,9 +12,7 @@ collections:
     fields:
       - {label: Title, name: title, widget: string}
       - {label: Date, name: date, widget: datetime}
-      - {label: Description, name: description, widget: text}
       - {label: Featured Image, name: featuredImage, widget: image}
-      - {label: Body, name: body, widget: markdown}
 
   - name: workshops
     label: Workshops
@@ -141,8 +139,6 @@ collections:
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Description, name: description, widget: string }
-          - { label: Body, name: body, widget: markdown }
-          - { label: Featured Image, name: featuredImage, widget: image }
 
       - file: content/site/psychic-spiritual-readings.md
         label: Psychic Spiritual Readings Page

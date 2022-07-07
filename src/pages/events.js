@@ -17,41 +17,20 @@ const EventsPage = ({ location }) => {
             frontmatter {
               title
               description
-              featuredImage {
-                childImageSharp {
-                  fluid(maxWidth: 800) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
             }
-            html
           }
         }
       }
     }
   `);
   const {
-    frontmatter: { title, description, featuredImage },
+    frontmatter: { title, description },
     html,
   } = data.allMarkdownRemark.edges[0].node;
 
   return (
-    <Layout location={location} title={title} description={description}>
-      <div className="o-page o-container o-container--large u-copy">
-        {featuredImage && featuredImage.childImageSharp && (
-          <Img
-            className="o-page__image u-high"
-            style={{ maxWidth: `600px` }}
-            fluid={featuredImage.childImageSharp.fluid}
-            alt={title}
-          />
-        )}
-        <section className="u-window-box-large" dangerouslySetInnerHTML={{ __html: html }} />
-        <div className="u-window-box-large">
-          <EventList />
-        </div>
-      </div>
+    <Layout location={location} title={title}>
+      <EventList />
     </Layout>
   );
 };
