@@ -29,7 +29,7 @@ const EventsPage = ({ location }) => {
   } = data.allMarkdownRemark.edges[0].node;
 
   return (
-    <Layout location={location} title={title}>
+    <Layout location={location} title={title} description={description}>
       <EventList />
     </Layout>
   );
