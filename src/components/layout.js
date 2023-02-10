@@ -43,8 +43,8 @@ const Layout = ({ location, children, title, description }) => {
       <Link className={classes} activeClassName="active" to={`/pricing`}>
         Pricing
       </Link>
-      <Link className={classes} activeClassName="active" to={`/booking`}>
-        Booking
+      <Link className={classes} activeClassName="active" to={`/contact`}>
+        Contact
       </Link>
     </>
   );
@@ -105,9 +105,6 @@ const Layout = ({ location, children, title, description }) => {
           {renderNavLinks(`c-footer__link`)}
           <Link className="c-footer__link" activeClassName="active" to={`/about`}>
             About
-          </Link>
-          <Link className="c-footer__link" activeClassName="active" to={`/contact`}>
-            Contact
           </Link>
           <div className="u-letter-box-large">&copy; {new Date().getFullYear()}</div>
         </div>

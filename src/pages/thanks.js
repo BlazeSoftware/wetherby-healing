@@ -43,7 +43,7 @@ const ThanksPage = ({ location }) => {
   return (
     <Layout location={location} title={title} description={description}>
       <div className="o-container o-container--medium u-centered u-window-box-large u-copy">
-        <h1 className="c-heading">Thank you for your message!</h1>
+        <h1 className="c-heading c-heading--sub">Thank you, I'll be in touch!</h1>
       </div>
       <div className="o-contact">
         <div className="o-page">

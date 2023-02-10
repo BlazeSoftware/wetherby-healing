@@ -8,9 +8,7 @@ import './contact.scss';
 const ContactPage = ({ location }) => {
   const data = useStaticQuery(graphql`
     query ContactQuery {
-      page: allMarkdownRemark(
-        filter: { fields: { slug: { regex: "^/site/contact/" } } }
-      ) {
+      page: allMarkdownRemark(filter: { fields: { slug: { regex: "^/site/contact/" } } }) {
         edges {
           node {
             frontmatter {
@@ -49,19 +47,15 @@ const ContactPage = ({ location }) => {
             Name
             <input id="name" name="name" className="c-field" required />
           </label>
+          <label className="o-form-element c-label">
+            Telephone
+            <input id="telephone" name="telephone" className="c-field" type="tel" />
+          </label>
           <label className="o-form-element c-label" htmlFor="email">
             Email
-            <input id="email" name="email" className="c-field" type="email" required />
+            <input id="email" name="email" className="c-field" type="email" />
           </label>
-          <label className="o-form-element c-label" htmlFor="email">
-            Subject
-            <input id="subject" name="subject" className="c-field" required />
-          </label>
-          <label className="o-form-element c-label" htmlFor="email">
-            Message
-            <textarea id="message" name="message" className="c-field" rows={7} required />
-          </label>
-          <div className="o-form-element">
+          <div className="o-form-element u-letter-box-large">
             <button className="c-button c-button--block c-button--ghost">
               Send Message
               <span className="c-button__icon-right">
