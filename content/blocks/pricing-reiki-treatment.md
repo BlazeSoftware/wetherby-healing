@@ -1,6 +1,5 @@
 ---
-title: Reiki Treatment
 weight: 1
+title: Reiki Treatment
 ---
-
-**£40** for **45 minutes** (special discounts for block bookings).
+**£40** for **30** minutes (please note a £20 deposit is required upon booking)
