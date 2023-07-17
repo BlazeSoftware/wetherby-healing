@@ -1,5 +1,5 @@
 ---
 title: Holistic and Wellbeing Fair
-date: 2023-04-13T13:18:53.461Z
+date: 2023-09-24T09:00:00.000Z
 featuredImage: /img/amended-workshop-sheet.png
 ---
