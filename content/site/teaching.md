@@ -1,7 +1,7 @@
 ---
 title: Psychic Workshops
 description: Wetherby Healing with Deborah Watson is hosting one day spiritual workshops
-featuredImage: /img/workshops.jpg
+featuredImage: /img/workshop.jpg
 ---
 
 # Psychic Workshops
