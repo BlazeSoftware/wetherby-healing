@@ -1,6 +1,6 @@
 ---
 title: Psychic & Spiritual Readings
-description: For anyone coming for a reading it is important for them to relax
+description: For anyone coming for an Animal Healing it is important for them to relax
   and keep an open mind.
 featuredImage: /img/crystals.jpg
 ---

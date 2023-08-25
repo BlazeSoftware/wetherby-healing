@@ -40,6 +40,9 @@ const Layout = ({ location, children, title, description }) => {
       <Link className={classes} activeClassName="active" to={`/workshops/`}>
         Workshops
       </Link>
+      <Link className={classes} activeClassName="active" to={`/animal-healing`}>
+        Animals
+      </Link>
       <Link className={classes} activeClassName="active" to={`/pricing`}>
         Pricing
       </Link>
