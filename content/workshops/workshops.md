@@ -1,11 +1,7 @@
 ---
 title: WORKSHOPS
 date: 2023-07-16T23:00:00.000Z
-description: No upcoming workshops this year sorry.
+description: Starting a new group in April, date and day to yet to be confirmed.
 featuredImage: /img/workshop.jpg
 ---
-I am only doing one on one tuition this year.  Please email if you interested.
-
-
-
-t﻿hank you x
+A﻿ll levels
