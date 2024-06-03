@@ -2,15 +2,15 @@
 weight: 0
 title: Opening Times
 ---
-Mon 10am to 12pm
+Mon 4.30pm to 6.30pm
 
 Tuesday All day
 
-Wednesday 10am to 1pm
+Wednesday 9am to 6pm
 
-Thursday 2pm to 7pm
+Thursday 5pm to 7pm
 
-Friday 10am to 1pm
+Friday 5pm to 6.30pm
 
 Saturdays: 8am – 4pm
 
