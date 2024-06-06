@@ -1,4 +1,4 @@
 ---
-title: Get In Touch
-description: I'd love to hear from you. Drop me a line.
+title: To book please go to contact page and click on book me, thanks
+description: https://calendly.com/deborahwatson68
 ---
