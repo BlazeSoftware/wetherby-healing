@@ -1,4 +1,4 @@
 ---
-title: To book please go to contact page and click on book me, thanks
+title: To book please go to contact page, thanks
 description: https://calendly.com/deborahwatson68
 ---
